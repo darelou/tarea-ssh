@@ -14,59 +14,57 @@
 ![Configuración de red](images/page1_img1.png)
 ![Configuración IP](images/page1_img2.png)
 
-## 2. Conexión por SSH
-
-- Conectarse por SSH a ambas máquinas
-- Crear usuarios: **Alex** y **Brais** en las respectivas máquinas
-- Configurar la IP estática de ambas máquinas
-
-![Configuración IP](images/page2_img2.png)
-
-## 3. Conexión entre máquinas
-
-- Desde **Máquina A** conectarse por SSH a **Máquina B**
-- Conectarse mutuamente desde A a B y de B a A
-- En cada máquina:
-  - Crear un directorio en `/tmp`
-  - Dejar un archivo como prueba
+## 2. Nos conectamos por ssh a las dos máquinas 
 
 ![Conexión SSH](images/page2_img1.png)
 
-## 4. Transferencia de archivos
+Y añadimos correspondientes Alex y Brais a las respectivas máquinas 
 
-- Copiar el archivo creado en cada máquina a la otra
+![Configuración IP](images/page2_img2.png)
 
-![SCP entre máquinas](images/page2_img2.png)
+Finalmenta configuramos la ip de las dos maquinas 
 
-- Copiar los archivos de ambas máquinas a la **máquina nativa**
+![Configuración IP](images/page2_img3.png)
 
-![Copia a máquina nativa](images/page2_img3.png)
+## 4. Conexion entre máquinas
 
-## 5. Creación de directorio y transferencia masiva
+- Nos conectamos a la maquina B desde la máquina A 
 
-- Crear el directorio `prueba3`
-- Generar **200 archivos**
+![SCP entre máquinas](images/page3_img1.png)
 
-![Generación de archivos](images/page3_img1.png)
+- Ahora nos conectamos a cada maquina entre ellas respectivamente para crear un directorio en /tmp dejando un archivo en cada maquina como prueba de haberlo conseguido  
 
-- Transferir el directorio a la máquina nativa
+![Copia a máquina nativa](images/page3_img2.png)
 
-![Transferencia a host](images/page3_img2.png)
+ - Por ultimo copiamos respectivamente de cada maquina el archivo que hemos creado
 
-## 6. Autenticación por clave SSH
+![Copia a máquina nativa](images/page3_img3.png)
+ 
+## 5. Transferencia de archivos
 
-- Desde **Máquina A**, generar una clave SSH
+- Copiamos los archivos de cada máquina a nuestra máquina nativa
 
-![Generar clave SSH](images/page3_img3.png)
+![Generación de archivos](images/page4_img1.png)
 
-- Copiar la clave pública a **Máquina B**
+- Ahora creamos el directorio prueba3 para crear los 200 archivos
 
-![Copiar clave a B](images/page4_img1.png)
+![Transferencia a host](images/page4_img2.png)
 
-- Conectarse sin contraseña, usando autenticación por **frase de paso**
+- Y nos lo pasamos a nuestro ordenador
 
-![Login sin contraseña](images/page4_img2.png)
+![Transferencia a host](images/page4_img3.png)
 
----
+## 6. Claves
 
-> ✨ *Recuerda verificar que el servicio SSH esté activo en ambas máquinas y que el puerto configurado sea accesible desde tu red.*
+- generamos la clave Desde A
+
+![Generar clave SSH](images/page5_img1.png)
+
+- Y se la pasamos a la máquina B  
+
+![Copiar clave a B](images/page6_img1.png)
+
+- Y por último nos conectamos por frase 
+
+![Login sin contraseña](images/page6_img2.png)
+
