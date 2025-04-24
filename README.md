@@ -12,6 +12,7 @@
     - Para la comunicación entre las dos máquinas
 
 ![Configuración de red](images/page1_img1.png)
+![Configuración IP](images/page1_img2.png)
 
 ## 2. Conexión por SSH
 
@@ -19,7 +20,7 @@
 - Crear usuarios: **Alex** y **Brais** en las respectivas máquinas
 - Configurar la IP estática de ambas máquinas
 
-![Configuración IP](images/page1_img2.png)
+![Configuración IP](images/page2_img2.png)
 
 ## 3. Conexión entre máquinas
 
